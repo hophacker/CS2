@@ -1,0 +1,6 @@
+Digital Signatures
+
+The basic idea in the use of digital signatures is as follows.
+
+You "sign" the document or code using one of your private keys, which you can generate by using keytool or security API methods. That is, you generate a digital signature for the document or code, using the jarsigner tool or Security API methods.
+You send your signed document to your recipient.

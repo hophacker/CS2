@@ -1,0 +1,7 @@
+
+A certificate contains:
+
+A public key.
+The "distinguished-name" information of the entity (person, company, or so on) whose certificate it is. This entity is referred to as the certificate subject, or owner. The distinguished-name information includes the following attributes (or a subset): the entity's name, organizational unit, organization, city or locality, state or province, and country code.
+A digital signature. A certificate is signed by one entity, the issuer, to vouch for the fact that the enclosed public key is the actual public key of another entity, the owner.
+The distinguished-name information for the signer 

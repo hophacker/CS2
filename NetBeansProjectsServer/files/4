@@ -1,0 +1,3 @@
+A recipient needs to ensure that your public key itself is authentic before he/she can use it to verify that your signature is authentic. Therefore, you will usually supply a certificate that contains your public key together with the key of a Certificate Authority who can vouch for your key's authenticity. See the next section for details.
+
+For more information about the terminology and concepts of signing and verification, and further explanation of the benefits, see the Signing JAR Files section of the "The Packaging Programs in JAR Files" lesson.

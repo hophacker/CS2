@@ -1,0 +1,3 @@
+Code and Document Security
+
+If you electronically send someone an important document (or documents), or an applet or application to run, the recipient needs a way to verify that the document or code came from you and was not modified in transit (for example, by a malicious user intercepting it). Digital signatures, certificates, and keystores all help ensure the security of the files you send.
