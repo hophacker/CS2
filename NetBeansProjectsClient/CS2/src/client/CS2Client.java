@@ -9,6 +9,7 @@ import cc.*;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import util.Config;
 
 public class CS2Client extends Thread {
 
@@ -16,6 +17,7 @@ public class CS2Client extends Thread {
     public Scanner reader = null;
     public PrintStream writer = null;
     private int mode;
+    private static String server_address = Config.getValue("server_address");
     /*
      * 1: intert file
      */
@@ -23,7 +25,7 @@ public class CS2Client extends Thread {
     public CS2Client(int _mode) {
         mode = _mode;
         try {
-            link = new Socket(InetAddress.getByName("1.1.1.252"), 1314);
+            link = new Socket(InetAddress.getByName(server_address), 1314);
             reader = new Scanner(link.getInputStream());
             writer = new PrintStream(link.getOutputStream());
             reader.useDelimiter(T.delim);
@@ -35,7 +37,7 @@ public class CS2Client extends Thread {
 
     public CS2Client() {
         try {
-            link = new Socket(InetAddress.getByName("1.1.1.252"), 1314);
+            link = new Socket(InetAddress.getByName(server_address), 1314);
             reader = new Scanner(link.getInputStream());
             reader.useDelimiter(T.delim);
             writer = new PrintStream(link.getOutputStream());
