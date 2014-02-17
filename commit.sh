@@ -1,3 +1,4 @@
 #!/bin/bash
-git commit -m "fengjie" -a
+read -p "Please provide the message of this commit:" message
+git commit -a -m $message
 ~/generated/push.sh
